@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        function escolha1(){
+            var html = '<div class="clyo">';
+            html += '<p> Você observa os heróis a distância, vendo a cidade em caos à sua volta. </p>';
+            html += '<p> Ao invés de confrontá-los diretamente, você decide manipular a situação, causando mais pânico na cidade.</p>';
+            html += '<p> Você espalha rumores e cria armadilhas para dividir os heróis, fazendo-os duvidar de si mesmos.</p>';
+            html += '<p> Eles começam a perseguir pistas falsas, enquanto você se aproxima cada vez mais do poder.</p>';
+            html += '<p><img src="https://files.oaiusercontent.com/file-NF3EKRhd781MT2RsiY5PfL?se=2025-02-24T19%3A59%3A58Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Ddec4d0f2-6e57-4f2e-9e92-1eb8cda11b40.webp&sig=ZOJfFOizcCLa/6i1nQYnxq0lGQm7in5fDGAD2c4crwA%3D"></p>';
+            html += '<p><button class="button" onclick="escolha2()">Continuar a manipulação</button></p>';
+            $("body").append(html);
+        }
+
+        function escolha2(){
+            var html = '<div class="clyo">';
+            html += '<p> Sua jogada mais ousada é infiltrar-se nas fileiras do governo, manipulando suas decisões para criar um cenário perfeito para sua ascensão. </p>';
+            html += '<p> A cidade entra em colapso. Fome e pobreza aumentam enquanto você observa de sua base secreta. </p>';
+            html += '<p> Os heróis, enfraquecidos e sem respostas, finalmente caem nas armadilhas que você preparou.</p>';
+            html += '<p> Agora, a cidade está à mercê de seu plano. Você controla tudo. </p>';
+            html += '<p><img src="https://files.oaiusercontent.com/file-Xx7qJekdqo9baqqdJgizKD?se=2025-02-26T16%3A47%3A32Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dea9cc9a5-6ad6-475a-b68a-9b2936a52b77.webp&sig=U8Zwro8A8Dd1EjLuMMsjJxnqJmfyD5myQ7wzy4DAJoY%3D"></p>';
+            html += '<p><button class="button" onclick="escolha3()">Assumir o controle total</button></p>';
+            $("body").append(html);
+        }
+
+        function escolha3(){
+            var html = '<div class="clyo">';
+            html += '<p> O caos que você causou é completo. Os heróis estão derrotados, a cidade está nas suas mãos, mas há uma sensação de vazio. </p>';
+            html += '<p> Você conseguiu o que queria, mas agora, o que fazer com o poder absoluto?</p>';
+            html += '<p> Você percebe que talvez o verdadeiro objetivo fosse criar uma nova ordem, onde você seria mais do que um vilão... seria o governante eterno. </p>';
+            html += '<p><img src="https://files.oaiusercontent.com/file-14FxYccTkybs9vxr7baDrU?se=2025-02-26T16%3A52%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D75fa66a2-af77-4a31-a162-abc60553d209.webp&sig=g0vHuQp0Gl6br2C8kb5HKAB4%2BTyetbhuFsf2OBM9%2Bzs%3D"></p>';
+            html += '<p><button class="button" onclick="escolha4()">Reescrever o destino da cidade</button></p>';
+            $("body").append(html);
+        }
+
+        function escolha4(){
+            var html = '<div class="clyo">';
+            html += '<p> Ao reescrever o destino da cidade, você cria uma nova realidade, uma onde os vilões governam e a resistência foi erradicada. </p>';
+            html += '<p> A cidade agora tem um novo propósito: servir ao seu império de sombras. </p>';
+            html += '<p> Você olha do topo do seu castelo, vendo os cidadãos como marionetes, todos sob o seu controle. </p>';
+            html += '<p> Você se torna mais do que uma lenda, você é um deus entre os mortais. </p>';
+            html += '<p><img src="https://img.freepik.com/premium-photo/city-sunset-rich-tonal-palette-midwest-gothic-concept-art_899449-282466.jpg"></p>';
+            html += '<p><button class="button" onclick="reiniciar()">Recomeçar</button></p>';
+            $("body").append(html);
+        }
+
+        function reiniciar(){
+            location.reload();
+        }
+
+    </script>
+</head>
+<body>
+    
+    <div class="clyo">
+        <h1>O Ascendente Vilão</h1>
+        <p> Você é um vilão ambicioso, em busca de poder absoluto. Quando vê os heróis em patrulha pela cidade, uma ideia surge. O que você fará para garantir que sua ascensão seja inevitável? </p>
+        <img src="https://img.freepik.com/fotos-premium/retrato-de-um-vilao-de-terror-causando-estragos-em-uma-pequena-cidade-conceito-de-fantasia-ilustracao-pintura-generative-ai_743201-12761.jpg" alt=" " class="I">
+
+        <button class="button" onclick="escolha1()">Manipular os heróis através de caos e engano.</button>
+        <button class="button" onclick="escolha2()">Atuar nas sombras, criando uma rede de poder e controle.</button>
+    </div>
+</body>
+</html>
